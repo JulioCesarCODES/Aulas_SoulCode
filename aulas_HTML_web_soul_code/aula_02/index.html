@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página inicial</title>
+  </head>
+  <body>
+    <figure>
+      <img
+        src="./midia/eu-a-patroa-e-as-criancas.jpeg"
+        alt="Img de eu a patroa e as crianças"
+        width="50%"
+        height="50%"
+      />
+      <figcaption>teste teste teste</figcaption>
+    </figure>
+    <h2>video</h2>
+    <video
+      src="./midia/abertura-chaves.mp4"
+      controls="true"
+      width="50%"
+      height="50%"
+    ></video>
+    <h2>Audio</h2>
+    <audio
+      src="./midia/abertura-um-maluco-no-pedaco.mp3"
+      controls="true"
+    ></audio>
+    <hr />
+
+    <h2>listas</h2>
+    <h3>listas não ordenadas</h3>
+    <ul>
+      <li>farinha de trigo</li>
+      <li>pão</li>
+      <li>leite</li>
+      <li>ovos</li>
+    </ul>
+
+    <h3>listas ordenadas (Receita de Bolo)</h3>
+    <ol>
+      <li>Misture os ingredientes</li>
+      <li>coloque a mistura na forma</li>
+      <li>aqueça o forno</li>
+      <li>leve ate o forno</li>
+      <li>sirva-se</li>
+    </ol>
+
+    <h3>Listas aninhadas</h3>
+    <ul>
+      <li>
+        café da manhã
+        <ul>
+          <li>café</li>
+          <li>pão</li>
+        </ul>
+      </li>
+      <li>
+        almoço
+        <ul>
+          <li>arroz</li>
+          <li>feijão</li>
+        </ul>
+      </li>
+      <li>
+        lanche
+        <ul>
+          <li>pão</li>
+          <li>batata</li>
+        </ul>
+      </li>
+      <li>
+        jantar
+        <ol>
+          <li>arroz</li>
+          <li>feijão</li>
+        </ol>
+      </li>
+    </ul>
+
+    <ol>
+      <li>
+        Recolha suas roupas
+        <ol>
+          <li>Veja nos quartos</li>
+          <li>Veja ni banheiro</li>
+        </ol>
+      </li>
+    </ol>
+
+    <h3 title="Titulo de listas">Listas de descrição</h3>
+
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        (HyperText Markup Language) é a linguagem que estrutura os elementos
+        visuais em uma pagina WEB.
+      </dd>
+      <dt>CSS</dt>
+      <dd>
+        (Cascading Style Shet ou Folhas de estilo em Cascata) é ima linguagem de
+        estilização utilizada para melhorar a aparencia visual de elementos em
+        um documento HTML.
+      </dd>
+    </dl>
+
+    <!-- atributos espepecificos (src, href, width)
+    Atribudos Globais (id, class, title)
+    -->
+    <hr>
+    <H1>tabela</H1>
+
+    <!-- <tr> table row -->
+    <!-- <td> table data -->
+    <!-- <thead> cabeçalho da tabela -->
+    <!-- <ybody> corpo da tabela -->
+    <!-- <tfoot> rodape da tabela -->
+
+    <table border="1px">
+      <colgroup>
+        <col style="width: 150px;"/>
+        <col style="width: 150px;"/>
+        <col style="width: 150px;"/>
+        <col style="width: 150px;"/>
+      </colgroup>
+      <tr>
+        <th>Nome</th>
+        <th>Aréa</th>
+        <th>Idade</th>
+        <th>Estado</th>
+      </tr>
+      <tr>
+        <td>julio</td>
+        <td>Full Stack</td>
+        <td>21 anos</td>
+        <td rowspan="2">São Paulo</td>
+      </tr>
+      <tr>
+        <td>jun</td>
+        <td>full stack</td>
+        <td>21 anos</td>
+        
+      </tr>
+      <tr>
+        <td colspan="4">professores da SoulCode</td>
+      </tr>
+    </table>
+
+    <h3>times</h3>
+    <table border="1">
+      <thead>
+      <tr>
+        <th>Time</th>
+        <th>Score</th>
+        <th>Gols</th>
+        <th>Vitorias</th>
+      </tr>
+      </thead>
+      <tr>
+        <td>sp</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>cr</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>pm</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+      </tr>
+      <tfoot>
+        <td>oi</td>
+      </tfoot>
+  </body>
+</html>

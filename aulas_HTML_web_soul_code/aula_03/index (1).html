@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Página inicial</title>
+</head>
+
+<body>
+    <h3>Cadastro de perfil</h3>
+    <!-- <form> Container do formulario -->
+    <!-- <input>, <textarea>, <select> campos formulario -->
+    <!-- <label> Rotulo de um campo do formulario -->
+    <form style="width: 700px;">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="cNome">Nome:</label>
+            <input required type="text" id="cNome" placeholder="Digite seu nome" name="nome" minlength="1"
+                maxlength="70" size="40" />
+            <br />
+
+            <label for="cSenha">Senha: </label>
+            <input type="password" id="cSenha" placeholder="digite sua senha" name="senha" />
+            <br />
+
+            <label for="cEmail">Email: </label>
+            <input type="email" id="cEmail" placeholder="digite seu email" name="email" />
+            <br />
+
+            <label for="cCELL">CELL</label>
+            <input type="tel" id="cCELL" placeholder="digite seu numero de tel" name="cell" />
+            <br />
+
+            <label for="cURL">URL</label>
+            <input type="url" id="cURL" name="url" />
+            <br />
+
+            <label for="cIDADE">Idade</label>
+            <input type="number" id="cIDADE" name="idade" value="21" />
+            <br />
+
+            <label for="cNASCIMENTO">Data nascimento</label>
+            <input type="date" id="cNASCIMENTO" name="data nascimento" min="0" max="100" />
+            <br />
+            Hora de nascimento:
+            <input type="time" name="hora do nascimento" /> <br />
+            Foto de perfil:
+            <input type="file" name="foto perfil" multiple accept=".png,.jpeg" /><br />
+
+            Sexo:
+            <br />
+            <label for="msex">Masculino</label>
+            <input type="radio" id="msex" name="sexo" /><br />
+            <label for="fsex">feminino</label>
+            <input type="radio" id="fsex" name="sexo" /><br />
+            <br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Outras informações</legend>
+
+            Interesses: <br />
+            humanas <input type="checkbox" name="interesses" /><br />
+            Exatas <input type="checkbox" name="interesses" /><br />
+            lingagem <input type="checkbox" name="interesses" /><br />
+            Ciencias <input type="checkbox" name="interesses" /><br />
+            <br />
+
+            Escolha uma cor
+            <input type="color" name="cor" /><br />
+
+            Nivel de ingles: 1
+            <input type="range" name="ingles" min="1" max="5" list="markers" value="1" />
+            5
+            <br />
+            <datalist id="markers">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+            </datalist>
+            Escondido:
+            <input type="hidden" name="escondido" /> <br />
+            conte sobre vc: <br />
+            <textarea cols="40" placeholder="Digite o seu texto aqui" name="texto"></textarea><br />
+            Escolaridade:
+            <select name="Escolaridade">
+                <option disabled selected>Selecione uma opção</option>
+                <option>teste 1</option>
+                <option>teste 2</option>
+                <option>teste 3</option>
+            </select>
+            <br />
+
+            <!-- <input type="submit"> -->
+            <button type="submit">enviar</button>
+            <button type="button">Não faz nada</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
