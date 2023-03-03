@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 80%;
+    background-color: pink;
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.main .artigo {
+    background-color: violet;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+@media (max-width: 720px) {
+    .main .artigo {
+        background-color: aqua;
+    }
+}
+
+@media (max-width: 600px) {
+    .main .artigo {
+        background-color: yellow;
+        width: 150px;
+        height: 175;
+    }
+}
+
+/* Mobile First (movel Primeiro) */
+/* Se o disoisitivo tiver uma largura maior ou igual a Xpx */

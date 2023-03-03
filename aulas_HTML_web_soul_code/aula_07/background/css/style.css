@@ -1,0 +1,66 @@
+/* background - plano de fundo */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(pink, violet, purple);
+}
+.quadrado {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.primeiro {
+    /* aplica cor de fundo */
+    background-color: violet;
+}
+
+.segundo {
+
+    /* background: linear-gradient(to left, pink, violet); 
+                                    to right
+                                    to top
+                                    to bottom */
+
+    background: linear-gradient(54deg, pink, violet, purple);
+}
+
+.terceiro {
+    background: radial-gradient(pink,violet,purple);
+}
+
+.scren {
+
+    /* 
+        vw - view width (largura da Tela)
+        vh - view height (altura da tela)
+    */
+
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    background-image: url("../plano-de-fundo.png");
+    /* 
+        background-repeat: repeat;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+    */
+
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    /* background-position: 50% 20%; */
+
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #00000088;
+}

@@ -1,0 +1,33 @@
+/* *- Seletor universal */
+
+* {
+    font-family: calibri;
+}
+
+h1, h2 {
+    /* altrar o tamanho da fonte */
+    font-size: 35px;
+    font-weight: 800; /* 100 a 800*/
+}
+
+h1 {
+    /* sobreamento no texto */
+    text-shadow: 2px 2px 10px purple;
+    /* x y espessura, cor */
+}
+
+h2 {
+    /* aplica itálico na fonte */
+    font-style: italic;
+    color: rgb(55, 70, 255);
+}
+
+p {
+    /* alinhamento de texto */
+    text-align: justify;
+    /* transformações no texto */
+    text-transform: lowercase;
+    text-transform: unset;
+    /* altura da linha */
+    line-height: 20px;
+}

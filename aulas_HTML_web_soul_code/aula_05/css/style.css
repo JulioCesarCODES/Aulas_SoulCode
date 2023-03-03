@@ -1,0 +1,34 @@
+/*  
+    sintax
+    SELETOR {propriedade: valor;}
+*/
+/* SELETOR
+    tag -> Nome da TAG de um documento que queira aplicar um estilo
+    id -> Identificar de forma unica um elemento de um documento
+    class -> Indentificar um elemento de um conjunto em um documento
+*/
+.p1 {
+    font-size: 20px;
+    font-family: verdana;
+    color: aqua;
+}
+
+.p2 i {
+    color: blueviolet;
+}
+
+.p2 {
+    color: aquamarine;
+}
+
+h1 {
+    color: purple;
+}
+
+.a1 {
+    width: 300px; /* largura */
+}
+
+img {
+    width: 100%;
+}

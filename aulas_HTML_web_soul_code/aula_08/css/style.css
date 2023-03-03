@@ -1,0 +1,24 @@
+/* 
+    display - Visualização
+    block - Ocupa o espaço da caixa
+    inline - Conteudo ocupa o espaço em linha (um a lado do outro)
+    inline-block -Se comporta como bloco mas os elementos 
+    são dispotos um ao lado do outro
+*/
+
+.border {
+    padding: 20px;
+    border: 2px solid violet;
+}
+
+.bloco {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.none {
+    display: none;
+}

@@ -1,0 +1,121 @@
+/* 
+    Flex-Box - Caixa Flexivel
+    * container
+    * itens / content
+    * direção
+*/
+/*
+    Recipiente
+    * display: flexível;
+    * direção flexível
+    * justificar-conteúdo
+    * itens de alinhamento
+    * alinhar-conteúdo
+    * brecha
+    * envoltório flexível
+    Itens/Conteúdo
+    * flex-crescimento
+    * flex-shrink
+    * flexível
+    * alinhar-se
+    * ordem
+*/
+
+.border {
+    padding: 0;
+    border: 2px solid pink;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+
+    display: flex; /* colocar flex no container */
+    align-items: flex-start;
+
+    /* Direção dos itens do container */
+    flex-direction: row; /* linha - row, coluna - column, linha reversa - row-reverse  
+                            column-reverse*/
+    justify-content: space-evenly; /* flex-start, flex-end, center, space-around, space-evenly 
+                                    space-between*/
+    
+    /* Alinhamento dos itens seguindo a direção perpendicular a direção definida */
+    align-items: center; /* flex-start, flex-end, center, stretch */
+}
+
+.container1 {
+    width: 50%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    /* Quebra de linha dos conteudos */
+    flex-wrap: wrap; /* rowrap, wrap */
+
+    justify-content: center;
+    align-items: center;
+    /* somente com flex-wrap: wrap; */
+    /* alinhamento do conteudo (linha coluna) seguindo a direção definida */
+    /* flex-start, flex-end, space-between, space-around, space-evenly  */
+    align-content: center; 
+    /* 
+        row-gap: 20px;
+        column-gap: 20px;
+    */
+
+    /* (grade de separação entre os itens) row-gap: 20px; column-gap:20px; */
+    gap: 20px;
+
+}
+
+.container-3 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.container-3 img {
+    /* Crescimento flexivel */
+    flex-grow: 1;
+    /* Diminuir de forma flexivel */
+    flex-shrink: 1;
+    /* flex: 1; */
+}
+
+header {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+    border: 2px solid blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    border: 2px solid purple;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-4 {
+    width: 50%;
+    display: flex;
+}
+
+.container-4 img {
+    flex: 1;
+}
+
+#c {
+    flex: 2;
+}
+
+#t {
+    /* Indica a posição a partir da posição original */
+    order: -1;
+}

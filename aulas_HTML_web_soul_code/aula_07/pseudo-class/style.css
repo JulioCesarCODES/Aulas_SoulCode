@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a:hover{
+    border: black solid 2px;
+    background-color: violet;
+    transform: scale(1.1);  /* aumenta a escala do elemento em 110% */
+}
+
+a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    padding: 10px 5px;
+    background-color: pink;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial;
+    border-radius: 8px;
+
+    text-decoration: none; /* Remove o underline do link */
+
+    /* transições */
+    transition-property: background-color; /* definir propiedade da transição */
+    transition-duration: 1s; /* definir a duração da transição */
+}
+
+/* Pseudo Classe */
+
+a:active {
+    background-color: violet;
+}
+
+/* a:visited {
+    background-color: blueviolet;
+} */

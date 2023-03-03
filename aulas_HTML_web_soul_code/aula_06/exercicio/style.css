@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+section img {
+    width: 100%;
+    border: 2px solid orange;
+}
+article {
+    border: 2px solid black;
+    width: 200px;
+    margin: 20px;
+}
+p {
+    text-align: center;
+    padding: 20px 30px 20px 30px;
+}
